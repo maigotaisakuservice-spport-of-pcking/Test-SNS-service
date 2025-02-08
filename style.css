@@ -1,12 +1,62 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
+
+/* ログインフォーム */
 form {
-    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.post {
-    border: 1px solid #ccc;
+
+input, textarea, button {
+    width: 100%;
     padding: 10px;
-    margin: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* 投稿一覧 */
+.post {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* メッセージ画面 */
+h2, h3 {
+    color: #333;
+}
+
+/* スマホ用の調整 */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    .post {
+        max-width: 95%;
+    }
 }
