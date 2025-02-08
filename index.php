@@ -17,15 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ログイン</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ログイン - Test-SNS-service</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Test-SNS-service</h1>
     <form method="POST">
         <h2>ログイン</h2>
         <input type="text" name="pin" placeholder="4桁の暗証番号" required>
         <button type="submit">入室</button>
-        <?php if (isset($error)) echo "<p>$error</p>"; ?>
+        <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
     </form>
 </body>
 </html>
