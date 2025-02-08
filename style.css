@@ -14,21 +14,24 @@ form {
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;  /* 確実に表示 */
 }
 
 input, textarea, button {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 18px;  /* 視認性向上 */
 }
 
 button {
     background: #007bff;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
