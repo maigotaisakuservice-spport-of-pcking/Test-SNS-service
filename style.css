@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+form {
+    margin-bottom: 20px;
+}
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
